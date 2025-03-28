@@ -1,4 +1,8 @@
+from flask import Flask, request, jsonify
 import boto3
+import os
+
+app = Flask(__name__)
 
 # AWS Config
 AWS_ACCESS_KEY = "ath_key"
@@ -6,7 +10,7 @@ AWS_SECRET_KEY = "sercet_key" #AWS Secret Key, kazdy moze miec wlasny jak narazi
 AWS_BUCKET_NAME = "igdatabase"  #S3 bucket name, igdatabase jak narazie
 AWS_REGION = "eu-north-1"  #Region (Stockholm)
 
-# Initialize session, Amazon S3
+# Initialize Amazon S3 client
 s3_client = boto3.client(
     service_name='s3',
     region_name=AWS_REGION,
@@ -15,35 +19,56 @@ s3_client = boto3.client(
 )
 
 
-# List files in the bucket
+# List files in the S3 bucket
 def list_files_in_bucket():
     response = s3_client.list_objects_v2(Bucket=AWS_BUCKET_NAME)
-
-    if "Contents" in response:
-        print("Files in the bucket:")
-        for obj in response["Contents"]:
-            print(obj["Key"])  # Print the file names (keys)
-    else:
-        print("No files found in the bucket.")
+    return [obj["Key"] for obj in response.get("Contents", [])]
 
 
-def download_file_from_s3(file_key, download_path):
+# Download a file from S3
+def download_file_from_s3(file_key, download_folder):
     try:
-        # Download the file from the bucket
+        filename = os.path.basename(file_key)  # Extract the filename
+        os.makedirs(download_folder, exist_ok=True)  # Ensure folder exists
+        download_path = os.path.join(download_folder, filename)
+
         s3_client.download_file(AWS_BUCKET_NAME, file_key, download_path)
-        print(f"File {file_key} downloaded successfully to {download_path}.")
+        return f"Downloaded: {file_key} → {download_path}"
     except Exception as e:
-        print(f"Error downloading file: {e}")
+        return f"Error downloading {file_key}: {e}"
 
 
-if __name__ == "__main__":
-    # List the files stored in S3 bucket
-    list_files_in_bucket()
+@app.route('/download', methods=['POST'])
+def download_files():
+    print("Request Headers:", request.headers)
+    print("Request Body:", request.get_data())  # This prints the raw body
+    try:
+        data = request.json
+        if not data:
+            return jsonify({"error": "No JSON data provided"}), 400
 
-    # Specify the file you want to download
-    file_key = 'my_folder/Screenshot 2024-12-14 181919.png'  # Example file path with spaces
-    download_path = 'C:/sem6/SP/TEST/Screenshot_2024.png'  # Local path including file name
+        folder_name = data.get('folder')
+        if not folder_name:
+            return jsonify({"error": "Folder name is required"}), 400
+
+        # List all files in the bucket
+        all_files = list_files_in_bucket()
+
+        # Filter files that start with the specified folder name
+        filtered_files = [file for file in all_files if file.startswith(folder_name + "/")]
+
+        if not filtered_files:
+            return jsonify({"message": f"No files found in folder '{folder_name}'"}), 404
+
+        # Download selected files
+        download_folder = f"C:/Users/zdjecia/{folder_name}"
+        results = [download_file_from_s3(file, download_folder) for file in filtered_files]
+
+        return jsonify({"status": "Completed", "files": results})
+
+    except Exception as e:
+        return jsonify({"error": f"An error occurred: {str(e)}"}), 500
 
 
-    # Download the file
-    download_file_from_s3(file_key, download_path)
+if __name__ == '__main__':
+    app.run(debug=True)

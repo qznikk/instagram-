@@ -1,5 +1,11 @@
 Below are the instructions for setting up and using the system, along with instructions for accessing the shared AWS S3 bucket.
 
+TO UPLOAD:
+![alt text](image.png)
+
+TO DOWNLOAD:
+![alt text](image-1.png)
+
 1. Prerequisites
    Before running the system, ensure you have the following installed:
 
@@ -48,12 +54,12 @@ python Copy Edit AWS_ACCESS_KEY = "YOUR_AWS_ACCESS_KEY" AWS_SECRET_KEY = "YOUR_A
 4. Running the Flask Application
    Start the Flask Application: To run the application, use the following command:
 
-Running on http://127.0.0.1:5000/ 5. Using the API
+Running on http://<HOST_NAME>/ 5. Using the API
 You can use Postman or any API testing tool to interact with the API endpoints.
 
 Upload File Method: POST
 
-URL: http://127.0.0.1:5000/upload
+URL: http://<HOST_NAME>/upload
 
 Body: Choose the form-data option and select file as the key. Upload a file
 
