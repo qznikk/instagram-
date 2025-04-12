@@ -1,22 +1,21 @@
-import { useContext } from "react";
-import { AuthContext } from "./AuthContext";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Profile from "./pages/Profile";
+import Main from "./pages/Main";
 
 function App() {
-  const { user } = useContext(AuthContext);
-
-  if (user) {
-    return <Profile />;
-  }
-
   return (
-    <div>
-      <Login />
-      <hr />
-      <Register />
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/main" element={<Main />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
+    </>
   );
 }
 

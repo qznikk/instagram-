@@ -6,8 +6,7 @@ export default function Profile() {
 
   return (
     <div>
-      <h2>Witaj, {user?.email}!</h2>
-      <button onClick={logout}>Wyloguj</button>
+      <h2>Witaj, {user?.email} na swoim profilu!</h2>
     </div>
   );
 }
