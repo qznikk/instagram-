@@ -1,0 +1,70 @@
+.profile-page {
+  padding: 2rem 4vw;
+  background-color: #fff;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.upload-section {
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.upload-section label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.upload-section input[type="file"] {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.upload-section button {
+  background-color: black;
+  color: orange;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.upload-section button:hover {
+  background-color: #222;
+}
+
+.status-msg {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.gallery-section {
+  margin-top: 2rem;
+}
+
+.gallery-section h3 {
+  margin-bottom: 1rem;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.photo {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
