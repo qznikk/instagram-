@@ -3,7 +3,7 @@ import { AuthContext } from "../AuthContext";
 import axios from "axios";
 
 export default function Profile() {
-  const { user, logout } = useContext(AuthContext);
+  const { user } = useContext(AuthContext);
   const [photos, setPhotos] = useState([]);
   const [file, setFile] = useState(null);
   const [msg, setMsg] = useState("");
@@ -43,7 +43,7 @@ export default function Profile() {
       });
       setMsg("✅ Zdjęcie przesłane!");
       setFile(null);
-      fetchPhotos(); // odśwież galerię
+      fetchPhotos();
     } catch (err) {
       console.error(err);
       setMsg("❌ Błąd przy uploadzie");
@@ -51,34 +51,35 @@ export default function Profile() {
   };
 
   return (
-    <div style={{ padding: "2rem" }}>
+    <div className="profile-page">
       <h2>Witaj, {user?.email}!</h2>
 
-      <hr />
-
-      <form onSubmit={handleUpload} style={{ margin: "1rem 0" }}>
-        <input type="file" onChange={(e) => setFile(e.target.files[0])} />
-        <button type="submit">Dodaj zdjęcie</button>
-        <p>{msg}</p>
-      </form>
-
-      <h3>Twoje zdjęcia</h3>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
-          gap: "1rem",
-        }}
-      >
-        {photos.map((photo) => (
-          <img
-            key={photo.id}
-            src={photo.url}
-            alt={photo.title || "Zdjęcie"}
-            style={{ width: "100%", borderRadius: "8px" }}
+      <section className="upload-section">
+        <form onSubmit={handleUpload}>
+          <label>Dodaj zdjęcie:</label>
+          <input
+            type="file"
+            onChange={(e) => setFile(e.target.files[0])}
+            required
           />
-        ))}
-      </div>
+          <button type="submit">Prześlij</button>
+          {msg && <p className="status-msg">{msg}</p>}
+        </form>
+      </section>
+
+      <section className="gallery-section">
+        <h3>Twoje zdjęcia</h3>
+        <div className="photo-grid">
+          {photos.map((photo) => (
+            <img
+              key={photo.id}
+              src={photo.url}
+              alt={photo.title || "Zdjęcie"}
+              className="photo"
+            />
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

@@ -13,32 +13,36 @@ export default function Navbar() {
   };
 
   return (
-    <nav style={{ padding: "1rem", borderBottom: "1px solid #ccc" }}>
-      <Link to="/main" style={{ marginRight: "1rem" }}>
-        Strona główna
-      </Link>
-      {!user && (
-        <Link to="/login" style={{ marginRight: "1rem" }}>
-          Zaloguj się
+    <nav className="navbar">
+      <div className="nav-left">
+        <Link to="/main" className="nav-link">
+          Strona główna
         </Link>
-      )}
+      </div>
 
-      {!user && (
-        <>
-          <Link to="/register" style={{ marginRight: "1rem" }}>
-            Rejestracja
-          </Link>
-        </>
-      )}
+      <div className="nav-right">
+        {!user && (
+          <>
+            <Link to="/login" className="nav-button">
+              Zaloguj się
+            </Link>
+            <Link to="/register" className="nav-button">
+              Rejestracja
+            </Link>
+          </>
+        )}
 
-      {user && (
-        <>
-          <Link to="/profile" style={{ marginRight: "1rem" }}>
-            Profil
-          </Link>
-          <button onClick={handleLogout}>Wyloguj</button>
-        </>
-      )}
+        {user && (
+          <>
+            <Link to="/profile" className="nav-link">
+              Profil
+            </Link>
+            <button className="logout-button" onClick={handleLogout}>
+              Wyloguj
+            </button>
+          </>
+        )}
+      </div>
     </nav>
   );
 }

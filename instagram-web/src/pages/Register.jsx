@@ -23,26 +23,31 @@ export default function Register() {
   };
 
   return (
-    <form onSubmit={handleRegister}>
-      <h2>Rejestracja</h2>
-      <input
-        type="email"
-        placeholder="E-mail"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        required
-      />
-      <br />
-      <input
-        type="password"
-        placeholder="Hasło"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        required
-      />
-      <br />
-      <button type="submit">Zarejestruj</button>
-      <p>{msg}</p>
-    </form>
+    <div className="auth-container">
+      <video autoPlay muted loop className="auth-video">
+        <source src="./src/assets/background.mp4" type="video/mp4" />
+        Twoja przeglądarka nie obsługuje wideo.
+      </video>
+      <div className="auth-overlay" />
+      <form onSubmit={handleRegister} className="auth-box">
+        <h2>Rejestracja</h2>
+        <input
+          type="email"
+          placeholder="E-mail"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <input
+          type="password"
+          placeholder="Hasło"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+        <button type="submit">Zarejestruj</button>
+        <p>{msg}</p>
+      </form>
+    </div>
   );
 }
