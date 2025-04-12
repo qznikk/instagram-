@@ -1,8 +1,10 @@
 import { useState, useContext } from "react";
 import axios from "axios";
 import { AuthContext } from "../AuthContext";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [msg, setMsg] = useState("");
@@ -19,6 +21,7 @@ export default function Login() {
       localStorage.setItem("token", res.data.token);
       setMsg("✅ Zalogowano!");
       fetchMe();
+      navigate("/profile");
     } catch (err) {
       setMsg("❌ Błąd logowania");
     }
