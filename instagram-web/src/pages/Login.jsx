@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import axios from "axios";
+import { AuthContext } from "../AuthContext";
 
-export default function Login({ onLogin }) {
+export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [msg, setMsg] = useState("");
+
+  const { fetchMe } = useContext(AuthContext);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -15,9 +18,9 @@ export default function Login({ onLogin }) {
       });
       localStorage.setItem("token", res.data.token);
       setMsg("✅ Zalogowano!");
-      onLogin();
+      fetchMe();
     } catch (err) {
-      setMsg("❌ Błędne dane logowania");
+      setMsg("❌ Błąd logowania");
     }
   };
 
@@ -26,7 +29,6 @@ export default function Login({ onLogin }) {
       <h2>Logowanie</h2>
       <input
         type="email"
-        placeholder="E-mail"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         required
@@ -34,7 +36,6 @@ export default function Login({ onLogin }) {
       <br />
       <input
         type="password"
-        placeholder="Hasło"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         required
