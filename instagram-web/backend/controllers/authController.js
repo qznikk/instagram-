@@ -3,11 +3,12 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 exports.register = async (req, res) => {
-  const { email, password } = req.body;
+  const { email, nikcname, password } = req.body;
   try {
     const hashed = await bcrypt.hash(password, 10);
-    await pool.query("INSERT INTO users (email, password) VALUES ($1, $2)", [
+    await pool.query("INSERT INTO users (email, nickname, password) VALUES ($1, $2, $3)", [
       email,
+      nikcname,
       hashed,
     ]);
     res.status(201).json({ message: "Zarejestrowano pomyślnie" });
@@ -41,7 +42,7 @@ exports.login = async (req, res) => {
 exports.getMe = async (req, res) => {
   try {
     const result = await pool.query(
-      "SELECT id, email FROM users WHERE id = $1",
+      "SELECT id, email, nickname FROM users WHERE id = $1",
       [req.userId]
     );
     res.json(result.rows[0]);

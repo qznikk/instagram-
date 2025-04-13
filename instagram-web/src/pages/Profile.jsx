@@ -52,7 +52,7 @@ export default function Profile() {
 
   return (
     <div className="profile-page">
-      <h2>Witaj, {user?.email}!</h2>
+      <h2>Witaj, {user?.nickname}!</h2>
 
       <section className="upload-section">
         <form onSubmit={handleUpload}>

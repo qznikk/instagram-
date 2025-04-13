@@ -1,0 +1,185 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\OneDrive\\Documents\\GitHub\\instagram-\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\backend\\controllers\\authController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:instagram-web\\backend\\controllers\\authController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\backend\\controllers\\photoController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:instagram-web\\backend\\controllers\\photoController.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\backend\\routes\\photoRoutes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:instagram-web\\backend\\routes\\photoRoutes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\backend\\routes\\authRoutes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:instagram-web\\backend\\routes\\authRoutes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web-clean\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:instagram-web-clean\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\backend\\middlewares\\authMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:instagram-web\\backend\\middlewares\\authMiddleware.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\backend\\config\\db.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:instagram-web\\backend\\config\\db.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\eslint.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:instagram-web\\eslint.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\exclude_env.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:instagram-web\\exclude_env.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "photoRoutes.js",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\backend\\routes\\photoRoutes.js",
+              "RelativeDocumentMoniker": "instagram-web\\backend\\routes\\photoRoutes.js",
+              "ToolTip": "D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\backend\\routes\\photoRoutes.js",
+              "RelativeToolTip": "instagram-web\\backend\\routes\\photoRoutes.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-12T18:18:51.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "authRoutes.js",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\backend\\routes\\authRoutes.js",
+              "RelativeDocumentMoniker": "instagram-web\\backend\\routes\\authRoutes.js",
+              "ToolTip": "D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\backend\\routes\\authRoutes.js",
+              "RelativeToolTip": "instagram-web\\backend\\routes\\authRoutes.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-12T18:18:45.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web-clean\\index.html",
+              "RelativeDocumentMoniker": "instagram-web-clean\\index.html",
+              "ToolTip": "D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web-clean\\index.html",
+              "RelativeToolTip": "instagram-web-clean\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-12T18:16:29.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "authMiddleware.js",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\backend\\middlewares\\authMiddleware.js",
+              "RelativeDocumentMoniker": "instagram-web\\backend\\middlewares\\authMiddleware.js",
+              "ToolTip": "D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\backend\\middlewares\\authMiddleware.js",
+              "RelativeToolTip": "instagram-web\\backend\\middlewares\\authMiddleware.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-12T18:16:18.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "photoController.js",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\backend\\controllers\\photoController.js",
+              "RelativeDocumentMoniker": "instagram-web\\backend\\controllers\\photoController.js",
+              "ToolTip": "D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\backend\\controllers\\photoController.js",
+              "RelativeToolTip": "instagram-web\\backend\\controllers\\photoController.js",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-12T18:16:13.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "authController.js",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\backend\\controllers\\authController.js",
+              "RelativeDocumentMoniker": "instagram-web\\backend\\controllers\\authController.js",
+              "ToolTip": "D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\backend\\controllers\\authController.js",
+              "RelativeToolTip": "instagram-web\\backend\\controllers\\authController.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-12T18:16:07.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "db.js",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\backend\\config\\db.js",
+              "RelativeDocumentMoniker": "instagram-web\\backend\\config\\db.js",
+              "ToolTip": "D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\backend\\config\\db.js",
+              "RelativeToolTip": "instagram-web\\backend\\config\\db.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-12T18:16:04.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "eslint.config.js",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\eslint.config.js",
+              "RelativeDocumentMoniker": "instagram-web\\eslint.config.js",
+              "ToolTip": "D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\eslint.config.js",
+              "RelativeToolTip": "instagram-web\\eslint.config.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-12T18:15:57.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "exclude_env.py",
+              "DocumentMoniker": "D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\exclude_env.py",
+              "RelativeDocumentMoniker": "instagram-web\\exclude_env.py",
+              "ToolTip": "D:\\OneDrive\\Documents\\GitHub\\instagram-\\instagram-web\\exclude_env.py",
+              "RelativeToolTip": "instagram-web\\exclude_env.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-12T18:15:51.134Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
