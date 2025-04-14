@@ -1,3 +1,46 @@
+@font-face {
+  font-family: 'HelloApple';
+  src: url('src/fonts/hello.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes typingFade {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+  }
+  10% {
+    clip-path: inset(0 90% 0 0);
+    opacity: 1;
+  }
+  20% {
+    clip-path: inset(0 70% 0 0);
+  }
+  30% {
+    clip-path: inset(0 50% 0 0);
+  }
+  40% {
+    clip-path: inset(0 30% 0 0);
+  }
+  50% {
+    clip-path: inset(0 0% 0 0);
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  100% {
+    clip-path: inset(0 0% 0 0);
+    opacity: 0;
+  }
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -51,3 +94,53 @@
   background-color: red;
   color: white;
 }
+
+.login-button {
+  font-family: 'HelloApple', cursive;
+  font-size: 4rem;
+  color: lightyellow;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  border: none;
+  display: inline-block;
+}
+
+.logout-button:hover {
+  color: wheat;
+}
+
+.typing-text {
+  font-size: 7rem;
+  display: inline-block;
+  font-family: 'HelloApple', cursive;
+  white-space: nowrap;
+  background: linear-gradient(to right, lightyellow 0% 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: typingFade 6s ease-in-out infinite;
+  opacity: 0;
+}
+
+
+.register-button {
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  transition: 0.2s ease;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.register-button:hover {
+  color: lightgray;
+}
+

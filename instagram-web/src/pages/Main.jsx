@@ -1,4 +1,11 @@
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../AuthContext";
+import { useNavigate } from "react-router-dom";
+
 export default function Main() {
+  const { user } = useContext(AuthContext);
+
   return (
     <div className="main-container">
       <video autoPlay muted loop className="background-video">
@@ -7,8 +14,16 @@ export default function Main() {
       </video>
       <div className="overlay" />
       <div className="content">
-        <h1>Główna</h1>
-        <p>To jest mniejszy tekst pod nagłówkiem</p>
+      {!user && (
+          <>
+            <Link to="/login" className="login-button">
+              <span className="typing-text">Zaloguj się</span>
+            </Link>
+            <Link to="/register" className="register-button">
+              Nie posiadasz konta? Zarejestruj się!
+            </Link>
+          </>
+        )}
       </div>
     </div>
   );

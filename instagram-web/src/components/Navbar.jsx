@@ -21,7 +21,7 @@ export default function Navbar() {
       </div>
 
       <div className="nav-right">
-        {!user && (
+        {/* {!user && (
           <>
             <Link to="/login" className="nav-button">
               Zaloguj się
@@ -30,7 +30,7 @@ export default function Navbar() {
               Rejestracja
             </Link>
           </>
-        )}
+        )} */}
 
         {user && (
           <>
